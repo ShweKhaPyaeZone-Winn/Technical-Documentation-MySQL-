@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>DBMS Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#What_is_DBMS?">What is DBMS ?</a></li>
+          <li><a class="nav-link" href="#What_is_MySQL?">What is MySQL ?</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Download_MySQL_Installer">Download MySQL Installer</a>
+          </li>
+          <li><a class="nav-link" href="#Connect_to_MySQL_Server">Connect to MySQL Server</a></li>
+          <li>
+            <a class="nav-link" href="#schema">MySQL Sample Database Schema</a>
+          </li>
+          
+          <li><a class="nav-link" href="#MySQL_Datatypes">MySQL Data Types</a></li>
+          
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>What is DBMS?</header>
+          <article>
+            <p>
+                Database Management Systems (DBMS) are software systems used to store,
+                retrieve, and run queries on data. A DBMS serves as an interface between
+                an end-user and a database, allowing users to create, read, update,
+                and delete data in the database.
+
+            </p>
+      
+            <p>
+            
+                DBMS manage the data, the database engine, and the database schema,
+                allowing for data to be manipulated or extracted by users and other programs. 
+                This helps provide data security, data integrity, concurrency, and uniform data 
+                administration procedures.
+            </p>
+            <p>
+
+                DBMS optimizes the organization of data by following a database schema design technique
+                called normalization, which splits a large table into smaller tables when any of 
+                its attributes have redundancy in values. DBMS offer many benefits over traditional 
+                file systems, including flexibility and a more complex backup system.
+
+            </p>
+            <p>
+                Database management systems can be classified based on a variety of criteria 
+                such as the data model, the database distribution, or user numbers. The most 
+                widely used types of DBMS software are relational, distributed, hierarchical, 
+                object-oriented, and network.
+            </p>
+            <ul>
+                <li>Distributed database management system</li>
+                <li>Hierarchical database management system</li>
+                <li>Network database management system</li>
+                <li>Rational database management system</li>
+                <li>Object-oriented database management system</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+          <header>What is MySQL ? </header>
+          <article>
+            <p>
+                 A database is a structured collection of data. It may be anything
+                 from a simple shopping list to a picture gallery or the vast amounts 
+                 of information in a corporate network. To add, access, and process data s
+                 tored in a computer database, you need a database management system such 
+                 as MySQL Server. Since computers are very good at handling large amounts 
+                 of data, database management systems play a central role in computing, 
+                 as standalone utilities, or as parts of other applications.
+            </p>
+            <h3>MySQL databases are relational.</h3>
+            <p>
+                A relational database stores data in separate tables rather than 
+                putting all the data in one big storeroom. The database structures are organized 
+                into physical files optimized for speed. The logical model, with objects such as 
+                databases, tables, views, rows, and columns, offers a flexible programming environment. 
+                You set up rules governing the relationships between different data fields, such as 
+                one-to-one, one-to-many, unique, required or optional, and “pointers” between different 
+                tables. The database enforces these rules, so that with a well-designed database, 
+                your application never sees inconsistent, duplicate, orphan, out-of-date, or missing data.
+            </p>
+            <p>
+                The SQL part of “MySQL” stands for “Structured Query Language”. SQL is the most common 
+                standardized language used to access databases. Depending on your programming environment,
+                you might enter SQL directly (for example, to generate reports), embed SQL statements 
+                into code written in another language, or use a language-specific API that hides the SQL 
+                syntax. SQL is defined by the ANSI/ISO SQL Standard.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Download_MySQL_Installer">
+          <header>Download MySQL Installer</header>
+          <article>
+            <p>
+                To download MySQL installer, go to the following link 
+                <a href="http://dev.mysql.com/downloads/installer/" target="_blank">
+                    http://dev.mysql.com/downloads/installer/</a>.  There are two installer files:
+
+            </p>
+      
+            <ul>
+                <li>If you are connecting to the internet while installing MySQL, 
+                    you can choose the online installation version 
+                    <code class="exe">mysql-installer-web-community-<version>.exe</code>.</li>
+                <li>In case you want to install MySQL offline, you can download the file.
+                    <code class="exe">mysql-installer-community-<version>.exe</code> </li>
+            </ul>
+            <div class="install">
+            <h1 class="h">
+                To install MySQL using the MySQL installer, double-click on the MySQL 
+                installer file and follow the steps below:
+            </h1>
+            <div class="img">
+            <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-1.png"
+             alt="image1">
+            <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-2.png" 
+            alt="image2" class="image">
+            <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-3.png"
+             alt="image3" class="image">
+             <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-4.png"
+              alt="image4" class="image">
+            <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-5.png" 
+            alt="image5" class="image">
+            <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-6.png"
+             alt="image6" class="image">
+            <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-7.png" 
+            alt="image7" class="image">
+            <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-7-done.png"
+             alt="image8" class="image">
+            <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-9.png"
+             alt="image9" class="image">
+            <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-10.png"
+             alt="image10" class="image">
+            <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-11.png"
+             alt="image11" class="image">
+             <img src="https://www.mysqltutorial.org//wp-content/uploads/2013/05/install-mysql-step-14.png"
+              alt="image12" class="image">
+            </div>
+          </article>
+        </section>
+        <section class="main-section" id="Connect_to_MySQL_Server">
+          <header>Connect to MySQL Server</header>
+          <article>
+            <p>If the mysql program is already in the PATH, you can simply invoke it using mysql command.</p>
+            <code>mysql</code>
+            <p>To connect to the MySQL Server, you use this command:<br>
+                -u root means that you connect to the MySQL Server using the user account root.<br>
+                -p instructs mysql to prompt for a password.</p>
+            <code>shell>mysql -u root -p</code>
+            <p>You type the password for the user account root and press Enter:</p>
+            <code>Enter password: ********            </code>
+            <p>To display the databases in the current server, you use the SHOW DATABASES statement:</p>
+            <code>mysql> show databases;            </code>
+            <p>Here is the output:</p>
+            <code>+--------------------+
+                | Database           |
+                +--------------------+
+                | information_schema |
+                | mysql              |
+                | performance_schema |
+                | sys                |
+                +--------------------+
+                4 rows in set (0.01 sec)
+                </code>
+          </article>
+        </section>
+
+        <section class="main-section" id="Schema">
+            <header>MySQL Sample Database Schema</header>
+            <article>
+                <p>The MySQL sample database schema consists of the following tables:</p>
+                <img src="https://www.mysqltutorial.org/wp-content/uploads/2009/12/MySQL-Sample-Database-Schema.png" alt="image13"
+                class="sample">
+            </article>
+          </section>
+
+        <section class="main-section" id="MySQL_Datatypes">
+          <header>MySQL Data Types</header>
+          <article>
+          <div class="type">
+          <div>
+               <p>String Data Types:</p>
+                <ul><li>CHAR</li>
+                <li>VARCHAR</li>
+                <li>BINARY</li>
+                <li>VARBINARY</li>
+                <li>TINYBLOB</li>
+                <li>TINYTEXT</li>
+                <li>TEXT</li>
+                <li>BLOB</li>
+                <li>MEDIUMTEXT</li>
+                <li>MEDIUMBLOB</li>
+                <li>LONGTEXT</li>
+                <li>LONGBLOB</li>
+                <li>NUM(val1, val2, val3,...)</li>
+                <li>SET(val1, val2, val3,...)</li></ul>
+          </div>
+          <div>
+              <p>Numeric Data Types:</p>
+              <ul><li>BIT</li>
+              <li>TINYINT</li>
+              <li>BOOL</li>
+              <li>BOOLEAN</li>
+              <li>SMALLINT</li>
+              <li>MEDIUMINT</li>
+              <li>INT</li>
+              <li>INTEGER</li>
+              <li>BITINT</li>
+              <li>FLOAT</li>
+              <li>DOUBLE</li>
+              <li>DECIMAL</li>
+              <li>DEC</li>
+              </ul>
+          </div>
+          <div>
+              <p>Date & Time Data Types:</p>
+              <ul><li>DATE</li>
+              <li>DATETIME</li>
+              <li>TIMESTAMP</li>
+              <li>TIME</li>
+              <li>YEAR</li></ul>
+          </div>
+          </div>
+          </article>
+        </section>
+        
+        
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+          <article>
+            <ul>
+              <li>
+                All the documentation in this page is taken from
+                <a
+                  href="https://www.mysqltutorial.org/"
+                  target="_blank"
+                  >MySQL</a
+                >
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
+      
+</body>
+</html>
